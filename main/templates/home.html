@@ -1,0 +1,132 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <title>GymTrack</title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+
+<body>
+    <section class="banner" id="home">
+        <div class="overlay">
+            <header class="topo">
+                <img src="{% static 'img/logo.png' %}" alt="Logo GymTrack" class="logo">
+                <nav>
+                    <a href="#home">HOME</a>
+                    <a href="#calculadoras">CALCULADORAS E TABELA NUTRICIONAL</a>
+                    <a href="#sobre">SOBRE</a>
+                    <a href="#servicos">SERVIÇOS</a>
+                </nav>
+                <div class="acesso">
+                    <a href="#">Suporte</a>
+                    <a href="#"><b>Cadastre-se </b>ou<br><b>faça seu login</b></a>
+                </div>
+            </header>
+            <div class="conteudo-banner">
+                <div class="texto-banner">
+                    <h1>MAIS <b>CONTROLE</b>. MAIS <b>PROGRESSO</b>.</h1>
+                    <p>A <span style="font-weight: 700;">GYMTRACK</span> foca no acompanhamento inteligente dos treinos para maximizar sua evolução</p>
+                    <a href="#servicos" class="botao">EXPLORE MAIS</a>
+                </div>
+                <div class="imagem-banner">
+                    <img src="{% static 'img/boneco.png' %}" alt="Homem agachando com pesos">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="calculadoras" id="calculadoras">
+        <div class="card imc">
+            <h2>Calcular IMC e TMB</h2>
+            <input type="text" placeholder="Altura">
+            <input type="text" placeholder="Peso">
+            <input type="text" placeholder="Idade">
+            <select>
+                <option>M</option>
+                <option>F</option>
+                <option>Outro</option>
+            </select>
+            <div class="atividade">
+                <label><input type="radio" name="atividade"> Sedentário</label>
+                <label><input type="radio" name="atividade"> Levemente ativo</label>
+                <label><input type="radio" name="atividade"> Moderadamente ativo</label>
+                <label><input type="radio" name="atividade"> Muito ativo</label>
+                <label><input type="radio" name="atividade"> Extremamente ativo</label>
+            </div>
+            <button>CONFIRA A ANÁLISE DO IMC</button>
+        </div>
+        <div class="card alimentos">
+            <h2>Calcular Ingestão de Alimentos</h2>
+            <input type="text" placeholder="Informe o alimento desejado">
+            <input type="text" placeholder="Quantidade">
+            <button>🔍</button>
+            <div class="resultado">
+                <strong>Tabela nutricional</strong>
+                <p>Calorias: 39.60 kcal</p>
+                <p>Carboidratos: 10.32 g</p>
+                <p>Proteínas: 0.52 g</p>
+                <p>Gorduras totais: 0.12 g</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="sobre" id="sobre">
+        <img src="{% static 'img/sobre.png' %}" alt="Sobre a GymTrack">
+        <div class="texto">
+            <h2>SOBRE NÓS</h2>
+            <h3>GYMTRACK</h3>
+            <p>A GymTrack é uma plataforma inteligente que une tecnologia e ciência do treino para potencializar
+                resultados na academia. Com planos personalizados, acompanhamento de carga, gráficos dinâmicos e suporte
+                de especialistas como nutricionistas,
+                nós oferecemos uma experiência completa para quem leva seus objetivos a sério. Tudo isso em um só lugar
+                — simples, eficiente e feito sob medida para sua evolução.</p>
+        </div>
+    </section>
+
+    <section class="plano" id="servicos">
+    <div class="destaque">
+        <h2>PLANO PLUS</h2>
+        <p>Invista no seu futuro hoje. Assine o plano que transforma esforço em resultados!</p>
+        <h3>R$ 49,90/mês</h3>
+        <button>CONTRATAR PLANO</button>
+    </div>
+
+    <span class="seta-baixo"> </span>
+
+    <div class="beneficios">
+        <h3>OS BENEFÍCIOS</h3>
+        <ul>
+            <li>
+                <img src="{% static 'img/icon_carga.png' %}" alt="Acompanhamento">
+                <strong>ACOMPANHAMENTO DE CARGA</strong>
+                <span>Track inteligente da sua progressão com dados precisos de volume e intensidade.</span>
+            </li>
+            <li>
+                <img src="{% static 'img/icon_graficos.png' %}" alt="Gráficos">
+                <strong>GRÁFICOS DINÂMICOS</strong>
+                <span>Visualize seu desempenho em tempo real com gráficos que mostram sua evolução muscular.</span>
+            </li>
+            <li>
+                <img src="{% static 'img/icon_plano.png' %}" alt="Plano">
+                <strong>PLANO PERSONALIZADO</strong>
+                <span>Algoritmos avançados para montar o treino ideal, adaptado aos seus objetivos.</span>
+            </li>
+            <li>
+                <img src="{% static 'img/icon_nutri.png' %}" alt="Nutricionista">
+                <strong>ACOMPANHAMENTO COM NUTRICIONISTA</strong>
+                <span>Conecte-se com especialistas e alinhe sua alimentação aos objetivos com precisão científica.</span>
+            </li>
+        </ul>
+    </div>
+
+    <div class="rodape-cta">
+        <p>Seja parte da transformação. Cadastre-se como nutricionista e leve seu conhecimento a quem busca resultado de verdade!</p>
+        <button>CADASTRE-SE PARA TRABALHAR CONOSCO</button>
+    </div>
+    </section>
+
+</body>
+
+</html>
